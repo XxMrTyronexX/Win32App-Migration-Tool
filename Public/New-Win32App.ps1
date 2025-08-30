@@ -150,7 +150,7 @@ function New-Win32App {
         [Switch]$PackageApps,
         [Parameter(Mandatory = $false, ValueFromPipeline = $false, Position = 7, HelpMessage = 'ResetLog: Pass this parameter to reset the log file')]
         [Switch]$ResetLog,
-        [Parameter(Mandatory = $false, ValueFromPipeline = $false, Position = 8, HelpMessage = 'The name of the main log file excluing the ".log" extension (Default: "Main.log")')]
+        [Parameter(Mandatory = $false, ValueFromPipeline = $false, Position = 8, HelpMessage = 'The name of the main log file excluing the ".log" extension (Default: "Main")')]
         [string]$logFileName = "Main",
         [Parameter(Mandatory = $false, ValueFromPipeline = $false, Position = 9, HelpMessage = 'ExcludePMPC: Pass this parameter to exclude apps created by PMPC from the results. Filter is applied to Application "Comments". string can be modified in Get-AppList Function')]
         [Switch]$ExcludePMPC,
@@ -170,7 +170,7 @@ function New-Win32App {
         [Switch]$CreateApps,
         [Parameter(Mandatory = $false, Position = 17, HelpMessage = 'NoConsoleOutput: Pass this parameter to disable writing to host (output still gets logged)')]
         [Switch]$NoConsoleOutput,
-        [Parameter(Mandatory = $false, Position = 18, HelpMessage = 'Win32ContentPrepToolSilentMode: Pass this parameter to hide the IntuneWinAppUtil Window')]
+        [Parameter(Mandatory = $false, Position = 18, HelpMessage = 'Win32ContentPrepToolSilentMode: Pass this parameter to hide the IntuneWinAppUtil Window which is shown when packaging apps')]
         [Switch]$Win32ContentPrepToolSilentMode,
 
         # Shared Parameters for Graph Authentication
